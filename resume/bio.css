@@ -1,0 +1,32 @@
+.full{
+    border-radius: 8px;
+    border-color: darkgoldenrod;
+    border-width: 5px;
+    background-color: #607D8B;
+}
+.left{
+    display: inline-block;
+    background-color: gray;
+    margin: -1px; 
+    font-size: 20px;
+    text-align: center;
+
+}
+.right{
+    display: inline-block;
+    vertical-align: top;
+    margin: -1px;
+    font-size: 20px;
+    
+}
+img{
+    border-radius: 50%;
+    border: 5px solid #00fff375;
+}
+hr{
+    color: black;
+    width: 5px;
+}
+h2{
+    text-decoration: underline;
+}
