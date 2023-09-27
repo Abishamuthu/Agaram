@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <script src="base.js"></script>
+</head>
+<body>
+    <button type="button" onclick="logout()">Logout</button>
+      
+       
+
+       <div id="list">
+        <p>Welcome<p id="para"></p> </p> 
+         <!-- <button type="button" onclick="display()">Registered users</button> -->
+       <table border="1" id="tabledata">
+           <thead>
+               <tr>
+                   <th>Name</th>
+                   <th>Email</th>
+                   <th>update</th>
+                   <th>Delete</th>
+               </tr>
+           </thead>
+           <tbody id="list_table">
+
+           </tbody>    
+        </table>
+<!-- <script>loginonly()</script> -->
+
+</body>
+<script>loginonly()</script>
+<script>checklogin()</script>
+
+</html>

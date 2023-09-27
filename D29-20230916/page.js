@@ -1,6 +1,8 @@
+
 function select(){
+    e.preventDefault();
     window.location="login.html";}
- function login(){   
+ function login(){ 
     let user_email=document.getElementById("email").value
     let user_pass=document.getElementById("password").value
     let list=localStorage.getItem("user_name");
@@ -8,20 +10,13 @@ function select(){
     for(var i=0;i<user_list.length;i++){
         let user=user_list[i].username;
      if((user_list[i].email==user_email) && (user_list[i].password==user_pass)){
-        
-        //users()
         localStorage.setItem("login",true);
         localStorage.setItem("u_name",user);
         window.location="home.html";
-        
-        
-        //break;
-        //document.getElementById("para").innerHTML=`<p>Welcome ${user}</p>`;
-        
-    }
-    }
    
-}
+    }
+    }
+   }
 
 function logout(){
     localStorage.removeItem("login");
