@@ -9,6 +9,8 @@ const firebaseConfig = {
   };
   firebase.initializeApp(firebaseConfig);
 
+  const auth = getAuth(app);
+
  firebase.database().ref("Users");
 //  document.getElementById("form").addEventListener("submit",Register)
  function Register(){
@@ -65,7 +67,17 @@ function loginForm(){
              }
              
           })
-          
+          createUserWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
+            // ...
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            // ..
+          });
    }
 
    function checklogin(){
@@ -78,6 +90,7 @@ function loginForm(){
 
    function display(){
     // e.preventDefault();
+   
     let list=firebase.database().ref("Users")
         list.once('value').then(function(snapshot) {
                 let data = snapshot.val();
