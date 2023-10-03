@@ -1,0 +1,75 @@
+#nav{
+            
+    position: absolute;
+    right: 0px;
+    top: 17px;
+}
+/* #l{
+    display: inline;
+} */
+    
+#head{
+    height: 80px;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    top: 22px;
+}
+#image{
+    width: 100%;
+}
+#sec{
+    position: relative;
+    margin-top: 10px;
+}
+h1{
+    position: absolute;
+    top: 133px;
+    left: 814px;
+}
+#home{
+    font-size: 60px;
+}
+#about{
+    font-size: 60px;
+}
+#collec{
+    font-size: 60px;
+}
+#gown{
+    font-size: 40px;
+}
+#saree{
+    font-size: 40px;
+}
+#wedding{
+    font-size: 40px;
+}
+#west{
+    font-size: 40px;
+}
+#kids{
+    font-size: 40px;
+}
+#co{
+    width: 20%;
+    height: 700px;
+}
+.i{
+    width: 15%;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+#list{
+    text-decoration: none;
+}
+#h{
+    margin-top: 10px;
+}
+ body{
+    background-image: url(https://img.freepik.com/premium-photo/abstract-blurred-background-interior-clothing-store-shopping-mall_44943-543.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
