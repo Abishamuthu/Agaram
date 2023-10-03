@@ -8,8 +8,8 @@ const firebaseConfig = {
     appId: "1:133571362179:web:2f17dd97db6112f0a14ab6"
   };
   firebase.initializeApp(firebaseConfig);
+//   const alert = bootstrap.Alert.getOrCreateInstance('#myAlert')
 
-  const auth = getAuth(app);
 
  firebase.database().ref("Users");
 //  document.getElementById("form").addEventListener("submit",Register)
@@ -52,7 +52,8 @@ function loginForm(){
               let user=false;
               for(i=0;i<data.length;i++){
                   if((data[i].email== Email)&&(data[i].password==Pass)){
-                      alert("login successfully");
+                    
+                alert("login successfully");
                       user=true;
                       localStorage.setItem("loggedin",true);
                       localStorage.setItem("loggname",data[i].name);
@@ -62,23 +63,11 @@ function loginForm(){
                   
               }
              if(user==false){
-                alert("sorry! Register first");
+                alert ("sorry! Register first");
                 window.location="register.html"
              }
              
-          })
-          createUserWithEmailAndPassword(auth, email, password)
-          .then((userCredential) => {
-            // Signed in 
-            const user = userCredential.user;
-            // ...
-          })
-          .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            // ..
-          });
-   }
+          })}
 
    function checklogin(){
     console.log("hi")

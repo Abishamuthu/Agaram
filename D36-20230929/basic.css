@@ -1,0 +1,26 @@
+ /* .head{
+    position: relative;
+}
+img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.6;
+    z-index: -1;
+}
+.para1{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+}  */
+
+.continer{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex{
+    
+    border: 1px solid red;
+    width: 200px;
+}
