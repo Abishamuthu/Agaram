@@ -1,4 +1,4 @@
-#nav{
+ #nav{
             
     position: absolute;
     right: 0px;
@@ -7,7 +7,25 @@
 /* #l{
     display: inline;
 } */
-    
+button{
+    position: absolute;
+    right:533px;
+}
+input{
+    position: absolute;
+    right: 610px;
+}
+
+#title{
+    position: absolute;
+    left: 60px;
+}
+
+h3{
+    position: absolute;
+    right: 250px;
+}
+
 #head{
     height: 80px;
     position: relative;
@@ -15,7 +33,7 @@
 .logo{
     position: absolute;
     top: 22px;
-}
+} 
 #image{
     width: 100%;
 }
