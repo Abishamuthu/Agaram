@@ -32,11 +32,6 @@
                 <textarea class="form-control" name="address" id="address" cols="15" rows="2" onkeyup="change(this)"></textarea>
             </div>
 
-            <label class="col-sm-3 col-form-label">Project</label>
-                <input type="text"id="pro"/>
-                <button type="button" class="btn btn-success col-sm-1" onclick="add('project','pro')">Add</button>
-                <div id="project"></div>
-
             <div>
                 <h1>Skills:</h1>
                 <input type="text"id="skills"/>
@@ -46,10 +41,6 @@
 
             <div class="row">
                 <h1>Personal Details</h1>
-                <label class="col-sm-3 col-form-label">Name:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control mt-2" name="name" id="name" onkeyup="change(this,'personal_info')"/>
-                </div>
                 <label class="col-sm-3 col-form-label">Father name:</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control mt-2" name="fathername" id="fathername" onkeyup="change(this,'personal_info')"/>
@@ -77,8 +68,8 @@
                 <div id="language"></div>
                 <div>
                     <label class="col-2">Marital Status::</label>
-                    <input type="radio" class="col-1" name="marital status" id="marital_status" value="Married" onchange="change(this,'personal_info')">Married</input>
-                    <input type="radio" class="col-1" name="marital status" id="marital_status" value="Unmarried" onchange="change(this,'personal_info')">Unmarried</input><br><br>
+                    <input type="radio" class="col-1" name="marital status" id="marital status" value="Married" onchange="change(this,'personal_info')">Married</input>
+                    <input type="radio" class="col-1" name="marital status" id="marital status" value="Unmarried" onchange="change(this,'personal_info')">Unmarried</input><br><br>
                 </div>
                 <label class="col-sm-3 col-form-label">Religion:</label>
                 <div class="col-sm-10">
@@ -91,41 +82,25 @@
 
                 <div>
                     <h1>Education:</h1>
-
-                        <input type="text" id="edu_name" name="edu_name" placeholder="Institution_name" onkeyup="arreydata(this)"/>
-                        <input type="text" id="edu_level" name="edu_level" placeholder="level" onkeyup="arreydata(this)"/>
-                        <input type="text" id="edu_year" name="edu_year" placeholder="year" onkeyup="arreydata(this)"/>
-                        <input type="text" id="edu_percentage" name="edu_percentage" placeholder="percentage" onkeyup="arreydata(this)"/>
+                    <div class="col-2">
+                        <input type="text" id="edu_name" name="edu_name" class="form-control"  placeholder="Institution_name" onkeyup="arreydata(this)"/>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="edu_level" name="edu_level" class="form-control"  placeholder="level" onkeyup="arreydata(this)"/>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="edu_year" name="edu_year" class="form-control" placeholder="year" onkeyup="arreydata(this)"/>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="edu_percentage" name="edu_percentage" class="form-control" placeholder="percentage" onkeyup="arreydata(this)"/>
+                    </div>
+                    <div class="col-2">
                         <button type="button" id="edu_details" name="edu_details" class="btn btn-success mb-2 mt-2" onclick="add('Education')">ADD</button>
                                       
-                            <div id="Education">
-                                <!-- <table>
-                                    <thead>
-                                        <th>edu_name</th>
-                                        <th>edu_level</th>
-                                        <th>edu_year</th>
-                                        <th>edu_percentage</th>
-                                        <th>delet</th>
-                                    </thead>
-                                    <tbody >
-
-                                    </tbody>
-                                </table> -->
-                            </div>
+                            <div class="" id="Education"></div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h1>Experience:</h1>
-
-                        <input type="text" id="comp_name" name="comp_name" placeholder="Company_name" onkeyup="arreydata(this)"/>
-                        <input type="text" id="role" name="role" placeholder="your role" onkeyup="arreydata(this)"/>
-                        <input type="text" id="experience" name="experience" placeholder="experience_year" onkeyup="arreydata(this)"/>
-                    
-                        <button type="button" id="exp_details" name="exp_details" class="btn btn-success mb-2 mt-2" onclick="add('Experience')">ADD</button>
-                                      
-                            <div id="Experience"></div>
-                        </div>
 
                 <label>Declaration:</label>
             <div>
@@ -142,7 +117,7 @@
     </div>
 
     <button type="button" class="btn btn-success" onclick="create()">submit</button>
-    <!-- <button type="button" class="btn btn-success" onclick="log()">next</button> -->
+    <button type="button" class="btn btn-success" onclick="log()">login</button>
     
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
