@@ -188,7 +188,10 @@ function getuser(){
                 <td>'${result.data[i].id}'</td>
                 <td>'${result.data[i].user}'</td>
                 <td><button type="button" class="btn btn-success" onclick="del('${result.data[i].id}')">delet</button></td>
-                <td><a href="user.html?id=${result.data[i].id}">list</a></td>
+                <td><a href="user.html?id=${result.data[i].id}">link1</a></td>
+                <td><a href="template.html?id=${result.data[i].id}">link2</a></td>
+                <td><a href="temp1.html?id=${result.data[i].id}">link3</a></td>
+                <td><a href="temp2.html?id=${result.data[i].id}">link4</a></td>
                 </tr>`
             }
             $("#table_data").html(datalist);
@@ -271,8 +274,8 @@ function userdata(id){
              let lang_known=udetail.language;
              console.log(lang_known)
              lang=""
-                for(var i=0;i<lang.length;i++){
-                    lang=lang+`<p>${lang[i]}</p>`
+                for(var i=0;i<lang_known.length;i++){
+                    lang=lang+`<p>${lang_known[i]}</p>`
                 }
                 $("#lan").html(lang)
              
@@ -291,7 +294,7 @@ function userdata(id){
 
                 edu_list=edu_list+`<tr>
                 <th>${educat[i].edu_year}</th>
-                <td>${educat[i].edu_name},<br>,${educat[i].edu_level},(Percentage:${educat[i].edu_percentage})</td>
+                <td>${educat[i].edu_name}<br>${educat[i].edu_level},<a style=" color:crimson">(Percentage:${educat[i].edu_percentage})</a></td>
                 </tr>`
              }
              $("#edu").html(edu_list)
@@ -301,8 +304,8 @@ function userdata(id){
              for(var i=0;i<expre.length;i++){
                 expre_list=expre_list+`<tr>
                 <td>${expre[i].comp_name}</td>
-                <td>${expre[i].role}</td>
-                <td>${expre[i].experience}</td>
+                <td>${expre[i].experience}<br/>
+                ${expre[i].role}</td>
                 </tr>`
              }
              $("#exp").html(expre_list)

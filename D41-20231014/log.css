@@ -1,0 +1,62 @@
+#nav{
+            
+    position: absolute;
+    right: 0px;
+    top: 17px;
+}
+#ser{
+    position: absolute;
+    right:533px;
+}
+input{
+    position: absolute;
+    right: 610px;
+}
+
+#title{
+    position: absolute;
+    left: 60px;
+}
+
+h3{
+    position: absolute;
+    right: 250px;
+}
+
+#head{
+    height: 80px;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    top: 22px;
+} 
+#image{
+    width: 100%;
+}
+#sec{
+    position: relative;
+    margin-top: 10px;
+}
+h1{
+    position: absolute;
+    top: 133px;
+    left: 814px;
+}
+#home{
+    font-size: 60px;
+}
+#about{
+    font-size: 60px;
+}
+.i{
+    width: 15%;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+#list{
+    text-decoration: none;
+}
+#h{
+    margin-top: 10px;
+}

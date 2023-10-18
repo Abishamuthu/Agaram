@@ -43,7 +43,12 @@
                 <button type="button" class="btn btn-success" onclick="add('skill','skills')">Add</button>
                 <div id="skill"></div>
             </div>
-
+            <div>
+                <label class="col-sm-3 col-form-label">Languages Known</label>
+                <input type="text"id="language_known" class="form-control col-sm-1"/>
+                <button type="button" class="btn btn-success col-sm-1" onclick="add('language','language_known')">Add</button>
+                <div id="language"></div>
+            </div>
             <div class="row">
                 <h1>Personal Details</h1>
                 <label class="col-sm-3 col-form-label">Name:</label>
@@ -71,10 +76,7 @@
                                 <option value="others">others</option>
                     </select>
                 </div>
-                <label class="col-sm-3 col-form-label">Languages Known</label>
-                <input type="text"id="language_known" class="form-control col-sm-1"/>
-                <button type="button" class="btn btn-success col-sm-1" onclick="add('language','language_known')">Add</button>
-                <div id="language"></div>
+                
                 <div>
                     <label class="col-2">Marital Status::</label>
                     <input type="radio" class="col-1" name="marital status" id="marital_status" value="Married" onchange="change(this,'personal_info')">Married</input>
@@ -98,7 +100,7 @@
                         <input type="text" id="edu_percentage" name="edu_percentage" placeholder="percentage" onkeyup="arreydata(this)"/>
                         <button type="button" id="edu_details" name="edu_details" class="btn btn-success mb-2 mt-2" onclick="add('Education')">ADD</button>
                                       
-                            <div id="Education">
+                            <div id="Education" class="table table-bordered table-dark">
                                 <!-- <table>
                                     <thead>
                                         <th>edu_name</th>
