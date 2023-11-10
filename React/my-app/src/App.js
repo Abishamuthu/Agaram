@@ -10,7 +10,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 
 function App() {
@@ -18,6 +18,10 @@ function App() {
     logged:false,
     email:""
   })
+
+  // useEffect(()=>{
+  //   alert(1)
+  // })
   const router = createBrowserRouter([
     {
       path: "/",

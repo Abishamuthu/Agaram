@@ -1,8 +1,9 @@
 import { Button } from "react-bootstrap"
 // import Home from "./home"
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import { Link, useNavigate } from "react-router-dom"
 // import Todo from './Todos/Todo';
+import axios from "axios";
 
 function Login(props){
     const navigate = useNavigate();
@@ -12,22 +13,41 @@ function Login(props){
         Password:"123456"
      })
      const checklogin=()=>{
-        if(loginValue.Email=="abi@gmail.com" && loginValue.Password==123456){
-            // alert("success")
+        // if(loginValue.Email=="abi@gmail.com" && loginValue.Password==123456){
+        //     // alert("success")
+        //     props.changeStatus({
+        //         logged:true,
+        //         email:loginValue.Email
+        //     })
+        //     navigate("/todo");
+        // }
+        // else{
+        //     // alert("Faild")
+        //     props.changeStatus({
+        //         logged:false,
+        //         email:""
+        //     })
+        // }
+        axios({
+            method: 'post',
+            url: ': http://agaram.academy/api/action.php',
+            data: {
+                request : "candidate_login",
+                email:"abi@gmail.com",
+                password:"123456"
+                
+          }}).then(function(response){
+            console.log("Success",response)
+            if(loginValue.Email=="abi@gmail.com" && loginValue.Password==123456){
             props.changeStatus({
-                logged:true,
-                email:loginValue.Email
-            })
-            navigate("/todo");
-        }
-        else{
-            // alert("Faild")
-            props.changeStatus({
-                logged:false,
-                email:""
-            })
-        }
+                         logged:true,
+                         email:loginValue.Email
+                     })
+                     navigate("/users");}
+          }
+          );
      }
+     
     return(
         <>
         <b>{JSON.stringify(loginValue)}</b>
