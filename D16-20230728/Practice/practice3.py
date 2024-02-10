@@ -15,5 +15,5 @@
 #     print("Invalid")    
 
 list=["abi","anu","acchu","dharshini","elakiya"]
-list=[x for x in list if x!="dharshin"]
+list=[x for x in list if x!="dharshini"]
 print(list)
